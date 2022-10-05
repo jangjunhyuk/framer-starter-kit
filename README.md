@@ -4,7 +4,7 @@
 
 1. [VScode](https://code.visualstudio.com/) 설치
 2. 확장프로그램으로 [LivePreview](https://marketplace.visualstudio.com/items?itemName=ms-vscode.live-server) 설치 (by Microsoft) 
-3. framer starter kit 모두 내려받기 (by me)
+3. framer starter kit 모두 내려받기 (폴더/파일 목록 우측 상단 code 버튼)
 4. 새 프로젝트 폴더 만들고, framer starter kit 폴더 안의 내용 복사하기
 5. VScode에서 새 프로젝트 폴더 열기
 6. index.html 파일 선택해서 LivePreview 실행 (편집기 우측 상단 아이콘)
