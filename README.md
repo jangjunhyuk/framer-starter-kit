@@ -3,7 +3,7 @@
 장인은 도구를 탓하지 않는다지만, 저는 장인이 아니라 ROI를 걱정하는 직장인일 뿐이기에, 손에 익은 도구를 다시 만나게 되어 다행이었습니다. 혹시나 도구를 탓하고 있는 또 다른 워너비 장인들이 있다면 아래 방법을 추천합니다.
 
 1. [VScode](https://code.visualstudio.com/) 설치
-2. 확장프로그램으로 [LivePreview](https://marketplace.visualstudio.com/items?itemName=ms-vscode.live-server) 설치 (by Microsoft) 
+2. VScode 확장프로그램으로 [LivePreview](https://marketplace.visualstudio.com/items?itemName=ms-vscode.live-server) 설치 (보기 > 확장 > Live Preview 검색) 
 3. framer starter kit 모두 내려받기 (폴더/파일 목록 우측 상단 code 버튼)
 4. 새 프로젝트 폴더 만들고, framer starter kit 폴더 안의 내용 복사하기
 5. VScode에서 새 프로젝트 폴더 열기
