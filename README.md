@@ -11,6 +11,6 @@
 7. [app.coffee](http://app.coffee) 파일 선택해서 해피 프로토타이핑!
 8. [가이드 문서](https://classic.framerbook.com/) 복습 (The Framer Classic book)
 
-##### * 당부의 말씀
+##### 당부의 말씀
 
-이 방법이 어떻게 가능한지는 아직 잘 모르겠습니다. CoffeeScript의 컴파일러나 Node.js 같은 자바스크립트 런타임이 필요하지 않을까 하는 생각이 있지만, 여러 [정보](https://medium.com/microsoft-design/how-to-run-framer-js-on-windows-94e6a06abfe4)들을 깊은 이해없이 그대로 따라해 보면서 이것저것 잡다한 것들을 설치했던 덕분에 무리없이 돌아가는게 아닐까 싶기도 합니다.
+잘 되지 않는다면 아마도 node.js나 CoffeeScript 컴파일러가 없기 때문일 것이라고 생각합니다. [여기](https://medium.com/microsoft-design/how-to-run-framer-js-on-windows-94e6a06abfe4)를 따라서 설치해 보시거나 [생활코딩 CoffeeScript 토픽](https://opentutorials.org/module/534/4656)을 참고해 보셔도 좋겠습니다.
