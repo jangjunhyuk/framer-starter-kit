@@ -18,6 +18,7 @@ https://medium.com/hyuk/639def3d12fe
 
 
 Framer Starter Kit for the old fashioned designer who misses the Framer Classic :)
+
 Clone this repository and edit app.coffee file to fit your project.
 
 Original Framer library: https://github.com/koenbok/Framer
