@@ -16,6 +16,6 @@ https://medium.com/hyuk/639def3d12fe
 
 잘 되지 않는다면 아마도 node.js나 CoffeeScript 컴파일러가 없기 때문일 것이라고 생각합니다. [여기](https://medium.com/microsoft-design/how-to-run-framer-js-on-windows-94e6a06abfe4)를 따라서 설치해 보시거나 [생활코딩 CoffeeScript 토픽](https://opentutorials.org/module/534/4656)을 참고해 보셔도 좋겠습니다.
 
-Framer Starter Kit for the old fashioned designer who misses the framer classic :)
+Framer Starter Kit for the old fashioned designer who misses the Framer Classic :)
 
 Original Framer library: https://github.com/koenbok/Framer
