@@ -1,55 +1,44 @@
 # default settings
-Framer.DeviceComponent.Devices["my-device"] =
-	name: "My Device"
-	deviceType: "mobile"
-	deviceImage: "/images/device.png"
-	deviceImageWidth: 432	
-	deviceImageHeight: 926
-	screenWidth: 
-		if Utils.isDesktop()
-			390
-		else if Utils.isMobile()
-			390 * (Screen.width/390)
-	screenHeight:
-		if Utils.isDesktop()
-			844
-		else if Utils.isMobile()
-			844 * (Screen.width/390)
-Framer.Device.deviceType = "my-device"
-
+Framer.Device.deviceType = "apple-iphone-x-space-gray"
 Framer.Extras.Hints.disable()	
 
 screen_width = Screen.width 
 screen_height = Screen.height
 
-default_w = 390
-default_h = 844
+default_w = 375
+default_h = 812
 
 ratio = screen_width / default_w
 
 Framer.Defaults.Layer.force2d = true
 
-all = new Layer
+All = new Layer
   width: default_w  
   height: default_h 
   scale: ratio   
   originY: 0   
   y: 0  
-all.centerX() 
+All.centerX() 
 
-notificationbar = new Layer
-	parent: all
+SafeAreaTop = new Layer
+	parent: All
 	backgroundColor: '#fff'
-	width: all.width
-	height: 25
+	width: All.width
+	height: 47
 
-content = new Layer
-	parent: all
-	width: all.width
-	height: all.height - notificationbar.height
-	y: notificationbar.maxY
-	backgroundColor: '#bbded6'
+SafeAreaBottom = new Layer
+  parent: All
+  maxY: All.height
+  backgroundColor: '#fff'
+  width: All.width
+  height: 34
+
+Content = new Layer
+	parent: All
+	width: All.width
+	height: All.height - SafeAreaTop.height - SafeAreaBottom.height
+	y: SafeAreaTop.maxY
+	backgroundColor: '#fff'
 
 # put your content below
-# parent: content
-
+# parent: Content
