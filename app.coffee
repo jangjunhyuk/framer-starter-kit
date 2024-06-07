@@ -1,12 +1,23 @@
+# deviceType can be either "phone" or "desktop"
+Framer.DeviceView.Devices["apple-iphone-15-pro"] =
+ deviceType: "phone"
+ screenWidth: 393*3
+ screenHeight: 852*3
+ deviceImage: "images/iphone15pro.png"
+ deviceImageWidth: 431*3
+ deviceImageHeight: 888*3
+
 # default settings
-Framer.Device.deviceType = "apple-iphone-x-space-gray"
+Framer.Device.deviceType = "apple-iphone-15-pro"
+Framer.Device.screen.borderRadius = 50*3
+Framer.Device.background.backgroundColor = "#000"
 Framer.Extras.Hints.disable()	
 
 screen_width = Screen.width 
 screen_height = Screen.height
 
-default_w = 375
-default_h = 812
+default_w = 393
+default_h = 852
 
 ratio = screen_width / default_w
 
@@ -20,25 +31,30 @@ All = new Layer
   y: 0  
 All.centerX() 
 
-SafeAreaTop = new Layer
-	parent: All
-	backgroundColor: '#fff'
-	width: All.width
-	height: 47
-
-SafeAreaBottom = new Layer
-  parent: All
-  maxY: All.height
-  backgroundColor: '#fff'
-  width: All.width
-  height: 34
-
 Content = new Layer
 	parent: All
 	width: All.width
-	height: All.height - SafeAreaTop.height - SafeAreaBottom.height
-	y: SafeAreaTop.maxY
+	height: All.height
 	backgroundColor: '#fff'
 
 # put your content below
-# parent: Content
+# parent: Content 
+
+
+
+# This is the layer located at the very front
+notification = new Layer
+    parent: Content
+    width: 393
+    height: 54
+    image: "images/notification.png"
+    index: 9
+# notification.bringToFront()
+
+indicator = new Layer
+    parent: Content
+    width: 393
+    height: 21
+    image: "images/indicator.png"
+    maxY: Content.height
+indicator.bringToFront()
