@@ -1,16 +1,18 @@
 # deviceType can be either "phone" or "desktop"
-Framer.DeviceView.Devices["apple-iphone-15-pro"] =
- deviceType: "phone"
- screenWidth: 393*3
- screenHeight: 852*3
- deviceImage: "images/iphone15pro.png"
- deviceImageWidth: 431*3
- deviceImageHeight: 888*3
+Framer.DeviceView.Devices["apple-iphone-15"] =
+  deviceType: "phone"
+  screenWidth: 393*3
+  screenHeight: 852*3
+  deviceImage: "images/iphone15.png"
+  deviceImageWidth: 1311
+  deviceImageHeight: 2664
+  devicePixelRatio: 1
 
 # default settings
-Framer.Device.deviceType = "apple-iphone-15-pro"
+Framer.Device.deviceType = "apple-iphone-15"
 Framer.Device.screen.borderRadius = 50*3
 Framer.Device.background.backgroundColor = "#000"
+Framer.Device.contentScale = 3
 Framer.Extras.Hints.disable()	
 
 screen_width = Screen.width 
@@ -41,20 +43,19 @@ Content = new Layer
 # parent: Content 
 
 
-
 # This is the layer located at the very front
 notification = new Layer
-    parent: Content
-    width: 393
-    height: 54
-    image: "images/notification.png"
-    index: 9
-# notification.bringToFront()
+  parent: Content
+  width: 393
+  height: 54
+  image: "images/statusbar.png"
+  index: 9
+notification.bringToFront()
 
 indicator = new Layer
-    parent: Content
-    width: 393
-    height: 21
-    image: "images/indicator.png"
-    maxY: Content.height
+  parent: Content
+  width: 393
+  height: 21
+  image: "images/indicator.png"
+  maxY: Content.height
 indicator.bringToFront()
